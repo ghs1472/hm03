@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>동호회 모집</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .threeDEffect {
+        color: yellow;
+        text-shadow: 2px 2px 4px black;
+      }
+    </style>
+
+    <script>
+      function change() {
+        var p = document.getElementById("firstP");
+        p.innerHTML =
+          "<img src='media/Screen_Shot_2017-09-06_at_1.23.53_AM.png' width=300; height=300;>";
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>
+      <div class="threeDEffect">★ 노래방 동호회 모집합니다 ★</div>
+    </h1>
+    <hr />
+    <form>
+      <fieldset>
+        <legend>회원정보</legend>
+        이메일 : <input type="email" /><br />
+        홈페이지 : <input type="url" /><br />
+        전화번호 : <input type="tel" />
+      </fieldset>
+      <small>
+        <p>
+          <a
+            href="javascript:alert('관심 있으신 분들은 위의 양식을 따라 메일로 jongmin432@naver.com 으로 보내주시면 됩니다.')"
+          >
+            클릭해보세요</a
+          >
+        </p>
+        <p>
+          <strong>문의 : Tel. 010-3714-0755</strong>
+        </p>
+      </small>
+
+      <p id="firstP" style="color:blue" onclick="change()">
+        이곳을 <span style="color:red">클릭해보세요</span>
+      </p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My favorites music best3</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .threeDEffect {
+        color: yellow;
+        text-shadow: 2px 2px 4px black;
+      }
+    </style>
+
+    <script>
+      function load() {
+        var select = document.getElementById("music");
+        window.location = select.options[select.selectedIndex].value;
+      }
+    </script>
+  </head>
+
+  <body>
+    <h1>
+      <div class="threeDEffect">★ My favorites music best3 ★</div>
+    </h1>
+    <hr />
+    음악 선택 :
+    <select id="music">
+      <option value="https://hyunjiwoon.tistory.com/2758" selected
+        >사랑은... 향기를 남기고 - 테이</option
+      >
+      <option value="https://blog.naver.com/uousfc/221475316800"
+        >전부 너였다 - 노을</option
+      >
+      <option value="https://blog.naver.com/3761726/221497872412"
+        >노래방에서 - 장범준</option
+      >
+    </select>
+    <p>
+      <button onclick="load()">웹 사이트 접속</button>
+    </p>
+  </body>
+</html>

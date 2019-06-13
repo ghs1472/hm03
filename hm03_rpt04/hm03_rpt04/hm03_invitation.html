@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>X-Mas 파티 초대장</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      #tree1 {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        left: 0px;
+        top: 0px;
+      }
+
+      #tree2 {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        left: 680px;
+        top: 0px;
+      }
+
+      #tree3 {
+        position: absolute;
+        height: 700px;
+        width: 750px;
+        left: 0px;
+        top: 150px;
+      }
+
+      #tree4 {
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        left: 430px;
+        top: 100px;
+      }
+
+      #tree5 {
+        position: absolute;
+        height: 250px;
+        width: 250px;
+        left: 0px;
+        top: 200px;
+      }
+
+      .threeDEffect {
+        color: yellow;
+        text-shadow: 2px 2px 4px black;
+      }
+
+      @keyframes bomb {
+        from {
+          font-size: 300%;
+        }
+
+        to {
+          font-size: 100%;
+        }
+      }
+
+      h1 {
+        animation-name: bomb;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>
+      <div class="threeDEffect">★ X-Mas 파티 초대장 ★</div>
+    </h1>
+    <hr />
+    <form>
+      <table>
+        <tr>
+          <td>파티 날짜</td>
+          <td>
+            <input type="date" value="2019-12-24" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>파티 시간</td>
+          <td>
+            <input type="time" value="21:30" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>파티 장소</td>
+          <td>
+            <input type="text" value="My home" />
+          </td>
+        </tr>
+      </table>
+
+      <img id="tree1" src="media/%EA%B7%B8%EB%A6%BC3_jhow9081.png" alt="종1" />
+      <img id="tree2" src="media/%EA%B7%B8%EB%A6%BC3_jhow9081.png" alt="종2" />
+      <img id="tree3" src="media/christmas-304506_1280.png" alt="장식1" />
+      <img id="tree4" src="media/1.png" alt="장식2" />
+      <img id="tree5" src="media/j0439771_lovestory405.png" alt="상자">
+      </p>
+    </form>
+  </body>
+</html>

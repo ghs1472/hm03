@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+  <head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8" />
+    <title>HM03's daily life</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .threeDEffect {
+        color: yellow;
+        text-shadow: 2px 2px 4px black;
+      }
+    </style>
+    <script></script>
+  </head>
+
+  <body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <h1>
+      <div class="threeDEffect">★ HM03's daily life ★</div>
+    </h1>
+    <script>
+      var current = new Date();
+      if (current.getSeconds() % 2 == 0)
+        document.body.style.backgroundColor = "greenyellow";
+      else document.body.style.backgroundColor = "lightskyblue";
+
+      document.write("<strong>현재 시간</strong> : ");
+      document.write(current.getHours(), "시 ");
+      document.write(current.getMinutes(), "분 ");
+      document.write(current.getSeconds(), "초");
+
+      document.write(
+        "<h4><strong>오전</strong></h4> 평일엔 아침 9시 수업이 있는 날은 오전 6시에 일어나 씻고 우유 한 잔 마시고 버스를 타러 간다. 대부분 1시전까진 수업을 듣는다. 주말에는 왠만해선 늦잠을 자는 경우가 많다."
+      );
+      document.write(
+        "<h4><strong>오후</strong></h4> 수업을 마친 뒤, 점심을 먹고 남은 수업을 듣는다. 수업이 다 끝나면 친구랑 놀거나 아니면 바로 집을 간다."
+      );
+      document.write(
+        "<h4><strong>저녁</strong></h4> 집에 오면 곧바로 샤워를 하고 난 뒤 과제가 있는경우 과제를 하고 kcu 강의가 있으면 kcu 강의를 듣는다. 할 일을 다하고 나면 tv를 보거나 게임을 한다. 보통 잠은 저녁 12~1시 사이에 잔다."
+      );
+    </script>
+  </body>
+</html>

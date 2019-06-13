@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!-- 이 부분은 주석문입니다. 웹 브라우저는 주석을 화면에 출력하지 않습니다. -->
+<html>
+	<head>
+    <!-- 문서제목, 자바스크립트 코드, CSS 스타일 정의, 메타데이터정의 -->
+    <meta charset="utf-8">
+    <title>hm03 : My Homepage using Semantic tag</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .header {
+            width: 100%;
+            height: 10%;
+            background: beige;
+        }
+
+        .nav {
+            width: 30%;
+            height: 80%;
+            float: left;
+            background: lavenderblush;
+        }
+
+        .section {
+            width: 70%;
+            height: 80%;
+            float: left;
+            background: White;
+        }
+
+        .aside {
+            width: 15%;
+            height: 70%;
+            float: left;
+            background: orange;
+        }
+
+        .footer {
+            width: 100%;
+            height: 10%;
+            clear: both;
+            background: beige;
+        }
+
+        .multiEffect {
+            color: red;
+            text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        }
+
+        .wordArtEffect {
+            color: white;
+            text-shadow: 0px 0px 3px black;
+        }
+
+        .threeDEffect {
+            color: dodgerblue;
+            text-shadow: 2px 2px 4px black;
+            font-size: 40px;
+        }
+    </style>
+    <script></script>
+</head>
+
+<body>
+    <!-- 문서의 본문 텍스트, 이미지, 테이블, 자바스크립트 코드, 동영상 등 -->
+    <header class="header">
+        <h1><a href="hm03_homepage.html" target="myframe"> HM03's Homepage </a></h1>
+    </header>
+
+    <nav class="nav">
+        <ul>
+            <li>
+                <h2>
+                    <div class="multiEffect">About hm03</div>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="hm03_who.html" target="myframe">
+                            <div class="wordArtEffect">Who is hm03?</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hm03_life.html" target="myframe">
+                            <div class="wordArtEffect">hm03's daily life</div>
+                        </a></li>
+                </ul>
+            </li>
+            <li>
+                <h2>
+                    <div class="multiEffect">My favorites</div>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="hm03_music.html" target="myframe">
+                            <div class="wordArtEffect">Best music 3</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2>
+                    <div class="multiEffect">hm03 form</div>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="hm03_circle.html" target="myframe">
+                            <div class="wordArtEffect">동호회 모집 안내</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hm03_iot.html" target="myframe">
+                            <div class="wordArtEffect">온도관리 (IoT)</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <h2>
+                    <div class="multiEffect">hm03 invitation</div>
+                </h2>
+                <ul>
+                    <li>
+                        <a href="hm03_xmas.html" target="myframe">
+                            <div class="wordArtEffect">X-Mas card</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="hm03_invitation.html" target="myframe">
+                            <div class="wordArtEffect">X-Mas 파티 초대장</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="section" id="main">
+
+        <article>
+            <iframe src="hm03_who.html" name="myframe" width="800" height="620">
+
+            </iframe>
+
+        </article>
+
+    </section>
+
+    <footer class="footer">
+        <p>
+            <h1><div class="threeDEffect">Copyright 2019, COMSI by hm03</div></h1>
+        </p>
+    </footer>
+
+</body></html>
+
